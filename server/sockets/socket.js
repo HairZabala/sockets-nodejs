@@ -15,7 +15,7 @@ io.on('connection', (client) => {
     client.on('enviarMensaje', (data, callback) => {
         console.log(data);
 
-        client.brodacast.emit('enviarMensaje', data);
+        client.broadcast.emit('enviarMensaje', data);
 
         // if (data.usuario) {
         //     callback({
